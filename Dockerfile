@@ -4,7 +4,7 @@ FROM jlesage/baseimage-gui:alpine-3.12-glibc-v3 AS base
 # System config
 RUN apk --no-cache add ca-certificates wget curl && update-ca-certificates && \
     add-pkg \
-		openjdk11-jre \
+		openjdk-17-jre \
 		gtk+3.0 \
 		dbus-x11 \
 		dbus \
